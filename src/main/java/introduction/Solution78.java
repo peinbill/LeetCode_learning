@@ -37,10 +37,14 @@ public class Solution78 {
     // 向后找，st之前的元素不作考虑
     public void backTrace(int usedSize, int tarSize, int st) {
         if (usedSize == tarSize) {
+            // 元素数目刚刚好
             res.add(new LinkedList<>(util));
             return;
-        } else if (usedSize + n-st < tarSize)   // 元素数目不足以构造
+        } else if (usedSize + n-st < tarSize){
+            // 元素数目不足以构造
             return;
+        }
+
         for (int i = st; i < n; ++i) {
             util.push(arr[i]);
             backTrace(usedSize + 1, tarSize, i+1);
