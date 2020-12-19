@@ -50,8 +50,12 @@ Solution64: 核心公式在于 f[i][j] = Math.min(f[i-1][j],f[i][j-1])+grid[i][j
 Solution62: 核心在于pathCount[i-1][j]和pathCount[i][j-1]所经过的路径一定是不同的
 Solution63: 在62的基础上很容易，多一个障碍物的判断，是障碍物则取0
 
-2、序列类型（40%）
+2、序列类型（40%）——先想动态规划，再想贪心算法
 Solution70：核心在于公式dp[i] = dp[i-1] + dp[i-2]
+Solution55:先使用动态规划进行一步一步推导，再根据其基础推导出贪心算法
+Solution45:先使用动态规划进行一步步推导，公式Math.min(dp[i]+1,dp[i+j]),再根据其特性推导出简易版的贪心算法
+Solution5: 画格子,然后找到递归公式d[i][j]=d[i+1][j_1]&&s[i]==s[j]
+
 
 
 
