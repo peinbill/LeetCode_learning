@@ -55,7 +55,8 @@ Solution70：核心在于公式dp[i] = dp[i-1] + dp[i-2]
 Solution55:先使用动态规划进行一步一步推导，再根据其基础推导出贪心算法
 Solution45:先使用动态规划进行一步步推导，公式Math.min(dp[i]+1,dp[i+j]),再根据其特性推导出简易版的贪心算法
 Solution5: 画格子,然后找到递归公式d[i][j]=d[i+1][j_1]&&s[i]==s[j]
-
+Solution300: 核心在于找到公式dp[i]=max(dp[j])+1,其中0≤j<i且num[j]<num[i]
+Solution139: 方法一：dp[i]=dp[j] && check(s[j..i−1])。方法二，顺序背包问题，物品迭代在外面，背包迭代在里面
 
 
 
