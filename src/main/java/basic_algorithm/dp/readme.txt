@@ -57,7 +57,15 @@ Solution45:先使用动态规划进行一步步推导，公式Math.min(dp[i]+1,d
 Solution5: 画格子,然后找到递归公式d[i][j]=d[i+1][j_1]&&s[i]==s[j]
 Solution300: 核心在于找到公式dp[i]=max(dp[j])+1,其中0≤j<i且num[j]<num[i]
 Solution139: 方法一：dp[i]=dp[j] && check(s[j..i−1])。方法二，顺序背包问题，物品迭代在外面，背包迭代在里面
+
+3. Two Sequences DP（40%）——此类问题一般为字符串问题，从空字符开始考虑会很有帮助
 Solution1143:遍历两个字符串:1、若 当前两个字符:相等当前状态=两个元素的前一个状态+1 2、若 当前两个字符不等：当前状态=两个元素任一元素的前一个状态的最大值
+Solution72： 建议从递归方式思考，再推出公式dp[i][j] = min(dp[i][j - 1], dp[i - 1][j], dp[i - 1][j - 1]) + 1
+
+4、零钱和背包（10%）
+Solution322: 背包问题，类似139.核心在于公式F(i)=MIN(F(i-j)+1,F(i))
+Solution92_Lin: 0/1背包问题，物品有且只有一件。https://mp.weixin.qq.com/s/RXfnhSpVBmVneQjDSUSAVQ
+Solution125_Lin: 同上
 
 
 
