@@ -32,3 +32,4 @@ Queue+size
 
 Solution104: 递归的简单运用
 Solution110：在104题目的基础上多加一层递归
+Solution235：直接使用dfs的特性，進階可以使用二叉搜索樹左邊的值比它小，右邊的值比它大的特性。詳細見我python版的SolutionOffer68_1
